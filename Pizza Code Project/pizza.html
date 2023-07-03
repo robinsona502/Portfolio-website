@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pizza Survey Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>  
+  <body>
+    <h1 id="title">Pizza Survey Form</h1>
+    <p id="description">Thank you for your valuable feedback</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name<input required placeholder="Enter name here" name="name" id="name"></label>
+        <label id="email-label" for="email">Email<input required placeholder="Enter email here" name="email" type="email" id="email"></label>
+        <label id="number-label" for="age">Age(optional)<input placeholder="Age" type="number" name="age" min="5" max="120" id="number"></label>
+        <label id="pizza-label" for="pizza">What is your favourite pizza?
+          <select name="dropdown" id="dropdown">
+          <option value="">(Select One)</option>
+          <option value="1">Margherita</option>
+          <option value="2">Meat Feast</option>
+          <option value="3">Vegetarian</option>
+          <option value="4">Other</option>
+          </select>
+        <label>Would you recommend ordering pizza at lunchtime?</label> 
+          <label for="yes"><input class="inline" value="1" id="yes" name="yes" type="radio">Yes</label>
+          <label for="no"><input class="inline" value="2" id="no" name="yes" type="radio">No</label>
+          <label for="no"><input class="inline" value="2" id="not-sure" name="yes" type="radio">Not Sure</label> 
+        <label for="sauce">What are your favourite dipping sauces?
+          <label for="ketchup"><input class="inline" id="ketchup" name="ketchup" type="checkbox" value="1">Ketchup</label>
+          <label for="mayonnaise"><input class="inline" id="mayonnaise" name="mayonnaise" type="checkbox" value="2">Mayonnaise</label>
+          <label for="garlic-mayonnaise"><input class="inline" id="garlic-mayonnaise" name="garlic-mayonnaise" type="checkbox" value="3">Garlic Mayonnaise</label>
+          <label for="pizza-sauce"><input class="inline" id="pizza-sauce" name="pizza-sauce" type="checkbox" value="4">Pizza Sauce</label>
+          <label for="bbq-sauce"><input class="inline" id="bbq-sauce" name="bbq-sauce" type="checkbox" value="5">BBQ Sauce</label>
+          <label for="garlic-butter"><input class="inline" id="garlic-butter" name="garlic-butter" type="checkbox" value="6">Garlic Butter</label>
+          <label for="hot sauce"><input class="inline" id="hot-sauce" name="hot-sauce" type="checkbox" value="7">Hot Sauce</label>
+          <label for="honey"><input class="inline" id="honey" name="honey" type="checkbox" value="8">Honey</label>
+          <label for="ranch-dressing"><input class="inline" id="ranch-dressing" name="ranch-dressing" type="checkbox" value="9">Ranch Dressing</label>
+        </label>
+        <label for="customer-experience">How can we improve our customer service?<textarea placeholder="Enter feedback here" id="customer-experience" name="customer-experience" rows="5" cols="30"></textarea>
+        </label>
+      <input id="submit" type="submit" value="submit"/>    
+    </form>
+  </body>
+</html>
