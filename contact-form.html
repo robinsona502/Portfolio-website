@@ -13,7 +13,7 @@
         
       <div class="hero">
         
-        <form >
+        <form onsubmit="sendEmail(); reset(); return false">
             <div class="row">
                 <div class="input-group">
                     <input type="text" id="name" required>
@@ -36,5 +36,23 @@
             <button type="submit"><i class="fas fa-paper-plane"></i>Submit</button>
         </form>
       </div> 
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: "832883e2-8f94-4e00-b429-d0de910a437b",
+                
+                To : 'robinsona502@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Message from Portfolio Website",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone Number: " + document.getElementById("number").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Successfully")
+            );
+        }
+      </script>
     </body>
 </html>
