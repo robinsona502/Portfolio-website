@@ -466,6 +466,126 @@ footer {
     text-align: center;
 }
 /* FOOTER CLOSE */
+/* WEB RESPONSE OPEN */
+@media screen and (max-width: 600px)
+{
+    #navbar h1 {
+        float: none;
+        padding-top: 17px;
+        text-align: center;
+    } 
+    #navbar ul li a{
+        display:block;
+        text-align: center;
+        padding: 20px;
+        color:black;
+    }
+    #showcase {
+        background:#f4f4f4;
+        height:600px;
+        width:auto;
+    }
+    
+    #showcase .showcase-content {
+    padding-top: 200px;
+    margin-left: 50px;
+    width:300px;
+    text-align: center;
+    
+    }
+    #footer {
+        margin-top: 60px;
+        background-color: #fff;
+        color:black;
+    }
+    
+    #footer .first {
+        width:90px;
+        padding-top: 40px 20px;
+        float:left;
+    
+    }
+    
+    #footer .first h3 {
+        font-size: 9px;
+        border-bottom: turquoise 2px solid;
+        padding-bottom: 5%;
+        
+        
+    }
+    
+    #footer .first p {
+        line-height: 0.9em;
+        margin-bottom: 25px;
+        font-size: 10px;
+    }
+    
+    #footer .first i {
+        font-size: 14px;
+      
+        
+    }
+    
+    #footer .first a {
+        color:black;
+        padding:0px 5px;
+        
+    }
+    
+    #footer .second {
+        width:90px;
+        padding-top: 20px 10px;
+        float:left;
+        font-size: 10px;
+    }
+    
+    #footer .second h3 {
+        font-size: 9px;
+        border-bottom: turquoise 2px solid;
+        padding-bottom: 5px;
+        
+    }
+    
+    #footer .second span i {
+        font-size: 11px;
+        padding-top: 5px;
+        
+        
+    }
+    
+    #footer .second span {
+        padding-left: 5px;
+        font-size: 10px;
+            
+    }
+    #footer .dummy-text {
+        color:black;
+        font-size: 5px;
+        padding-left: 25px;
+        
+    
+    }
+    
+    #footer .second ul {
+        list-style: none;
+        
+    }
+    
+    #footer .second ul li {
+        display:block;
+        padding: 10px;
+        
+    
+    }
+    
+    #footer .second ul li a:hover {
+        color: black;
+        transition: 0.3s;
+        text-decoration: underline;
+    }
+}
+    
+/*WEB RESPONSE CLOSE */
 
 
 /* PORTFOLIO CLOSE */
