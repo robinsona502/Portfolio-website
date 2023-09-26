@@ -466,6 +466,17 @@ footer {
     text-align: center;
 }
 /* FOOTER CLOSE */
+
+/* LINKS OPEN */
+
+li a { text-decoration: none; color:#000; }
+li a:visited { text-decoration: none; color:#000; }
+li a:hover { text-decoration: none; color:#000; }
+li a:focus { text-decoration: none; color:#000; }
+li a:hover, .navBtn:active { text-decoration: none; color:#000; }
+
+/* LINKS CLOSE */
+
 /* WEB RESPONSE OPEN */
 @media screen and (max-width: 600px)
 {
@@ -574,7 +585,7 @@ footer {
     #footer .second ul li {
         display:block;
         padding: 10px;
-        color: black;
+        
         
     
     }
