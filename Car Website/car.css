@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container .header {
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .header .logo {
+    max-width: 100%;
+    width: 70px;
+    height: 70px;
+    background: url(logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container .header .nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.container .header .nav ul li {
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.container .header .nav ul li a {
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #242b2e;
+}
+
+.container .header .nav ul li a:hover {
+    border-bottom: 2px solid #4facfe;
+}
+
+.container .header .buttons {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.container .header .buttons button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+
+}
+
+.container .header .buttons button:hover {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #4facfe 20%, #00f2fe 80%);
+}
+
+.container .main_content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.container .main_content .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+}
+
+.container .main_content .content h1 {
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.container .main_content .content span {
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container .main_content .content p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .main_content .car_img {
+    width: 100%;
+    height: 500px;
+    background: url(golfgti.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.container .futures {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .futures .engine,.transmission,.power,.brake {
+    width: 100%;
+    height: 160px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .futures .engine img,.transmission img,.power img,.brake img {
+    width: 100%;
+    height: 150px;
+    padding: 3px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.container .futures .engine:hover,.transmission:hover,.power:hover,.brake:hover {
+    background-image: linear-gradient(to right, #4facfe 20%, #00f2fe 80%);
+    color: #ffffff;
+    font-weight: 500;
+}
