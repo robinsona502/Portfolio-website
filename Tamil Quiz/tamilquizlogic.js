@@ -36,4 +36,9 @@ function resetQuiz() {
 
 window.onload = displayQuestion;
 
+document.getElementById("answer-input").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    checkAnswer();
+  }
+});
 
