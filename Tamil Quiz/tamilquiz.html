@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tamil Word Quiz</title>
+  <title>Tamil Quiz</title>
   <link rel="stylesheet" href="tamilquiz.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Tamil Word Quiz</h1>
-    <div id="question-box">
-      <div id="question-category"></div>
-      <div id="question-word"></div>
-      <input type="text" id="answer-input" placeholder="Enter Tamil answer" />
-      <button onclick="checkAnswer()">Submit</button>
-      <div id="feedback"></div>
-    </div>
-    <div class="score-box">
+  <div class="quiz-container">
+    <h1>Tamil Quiz</h1>
+    <p id="category"></p>
+    <p id="question" class="question"></p>
+
+    <input type="text" id="answerInput" placeholder="Type your answer..." />
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="feedback"></p>
+
+    <div class="score-area">
       <p>Score: <span id="score">0</span></p>
       <button onclick="resetQuiz()">Reset</button>
     </div>
+
+    <div>
+      <button onclick="toggleMode()">Switch to Tamil → English</button>
+      <p id="currentMode">Current Mode: English → Tamil</p>
+    </div>
+
   </div>
 
   <script src="tamilquizdata.js"></script>
