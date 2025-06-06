@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Word Recall Game</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    #word { font-size: 24px; margin-bottom: 20px; }
+    input, button { padding: 10px; font-size: 18px; }
+    #feedback { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
 
+  <div id="word">Loading...</div>
+  <input type="text" id="answer" placeholder="Type your answer..." />
+  <button onclick="checkAnswer()">Submit</button>
+  <div id="feedback"></div>
+  <button onclick="loadWord()">Next Word</button>
+
+  <script>
+    const wordBank = [
+      { question: "Comb", answer: "Seepu" },
+      { question: "Box", answer: "Petti" },
+      { question: "Stone", answer: "Kal" },
+      { question: "Chair", answer: "Kahtheeray" },
+      { question: "Tooth", answer: "Pal" },
+      { question: "Word", answer: "Sol" },
+      { question: "Grass", answer: "Pul" },
+      { question: "Bow", answer: "Vil" },
+      { question: "Table", answer: "Maysay" },
+      { question: "Bed", answer: "Kattil" },
+      { question: "Window", answer: "Yannul" },
+      { question: "Flower", answer: "Poo" },
+      { question: "Door", answer: "Kathavu" },
+      { question: "Leaf", answer: "illay" },
+      { question: "Cold drink", answer: "Coolir pahnam" },
+      { question: "Lid", answer: "Moodi" },
+      { question: "Water", answer: "Thanee" },
+      { question: "Cap", answer: "Thoppee" },
+      { question: "Paper", answer: "Kadathasee" },
+      { question: "Bottle", answer: "Porthul" },
+      { question: "Plug", answer: "Min Inaippu Saathanam" },
+      { question: "Pillow", answer: "Thalani" },
+      { question: "Coat", answer: "Maylan-gee" },
+      { question: "Ball", answer: "Pundoo" },
+      { question: "Bat", answer: "Muttei" },
+      { question: "Bag", answer: "Pie" },
+      { question: "Book", answer: "Putaham" },
+      { question: "Tree", answer: "Maram" },
+      { question: "Mat/Rug", answer: "Paai" },
+      { question: "Rain", answer: "Mullei" },
+      { question: "Sea/Ocean", answer: "Kuddal" },
+      { question: "Road", answer: "Paathei" },
+      { question: "Lane", answer: "Olungei" }
+    ];
+
+
+    let currentWord = {};
+
+    function loadWord() {
+      const randomIndex = Math.floor(Math.random() * wordBank.length);
+      currentWord = wordBank[randomIndex];
+      document.getElementById("word").textContent = currentWord.question;
+      document.getElementById("answer").value = "";
+      document.getElementById("feedback").textContent = "";
+    }
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById("answer").value.trim();
+      const isCorrect = userAnswer.toLowerCase() === currentWord.answer.toLowerCase();
+      document.getElementById("feedback").textContent = isCorrect
+        ? "✅ Correct!"
+        : `❌ Wrong. Correct answer: ${currentWord.answer}`;
+    }
+
+    window.onload = loadWord;
+  </script>
+
+</body>
+</html>
