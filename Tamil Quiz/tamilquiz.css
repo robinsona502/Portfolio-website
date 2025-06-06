@@ -1,1 +1,77 @@
-
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #4a4e69;
+    margin-bottom: 1rem;
+  }
+  
+  #question-box {
+    margin-bottom: 1.5rem;
+  }
+  
+  #question-category {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+  }
+  
+  #question-word {
+    font-size: 1.5rem;
+    color: #1d3557;
+    margin-bottom: 1rem;
+  }
+  
+  #answer-input {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  button {
+    background-color: #4a4e69;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6c678c;
+  }
+  
+  #feedback {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .score-box {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
