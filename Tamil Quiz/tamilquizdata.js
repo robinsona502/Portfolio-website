@@ -5,7 +5,7 @@ const quizData = [
     { category: "Fruit", word: "Banana", answer: "Vahllei Pallam" },
     { category: "Fruit", word: "Mango", answer: "Maam Pallam" },
     { category: "Fruit", word: "Papaya", answer: "Papasi Pallam" },
-    { category: "Fruit", word: "Grapes", answer: "Dhrakshai" },
+    { category: "Fruit", word: "Grapes", answer: "Thirrahchei Pallam" },
     { category: "Fruit", word: "Pineapple", answer: "Annahsi Pallam" },
     { category: "Fruit", word: "Orange", answer: "Thowdam Pallam" },
     { category: "Fruit", word: "Watermelon", answer: "Tharrpoosanee Pallam" },
